@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:myportfolio/models/Recommendation.dart';
 
 import '../constants.dart';
-import '../responsive.dart';
 
 class RecommendationCard extends StatelessWidget {
   const RecommendationCard({

@@ -11,7 +11,7 @@ class banner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(aspectRatio: 4,
+    return AspectRatio(aspectRatio: Responsive.isMobileLarge(context)?3:4,
       child: Stack(
         fit: StackFit.expand,
         children: [
@@ -34,48 +34,70 @@ class AnimatedText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "My investment on\n Learnings!",
-            style:Responsive.isDesktop(context)? Theme.of(context).textTheme.headline3!.copyWith(
-                fontWeight: FontWeight.bold,
-                color: Colors.white
-            ):Theme.of(context).textTheme.headline5!.copyWith(
-                fontWeight: FontWeight.bold,
-                color: Colors.white
+    return Column(
+      children: [
+        if (!Responsive.isDesktop(context))
+          PreferredSize(
+            preferredSize: Size.zero,
+            child: AppBar(
+                backgroundColor: Colors.transparent,
+                leading: Builder(
+                  builder: (context)=>IconButton(
+                    onPressed: (){
+                      Scaffold.of(context).openDrawer();
+                    },
+                    icon: Icon(Icons.menu,color: Colors.white,),
+                  ),
+                )
             ),
           ),
-          if (Responsive.isMobileLarge(context) && !Responsive.isMobile(context))
-            const SizedBox(height: defaultPadding/2,),
-          if (!Responsive.isMobile(context))
-          DefaultTextStyle(
-            style: Theme.of(context).textTheme.subtitle1!,
-            child: Row(
-              children: [
-                if (!Responsive.isMobileLarge(context))
-                Text("I bulit",style: TextStyle(color: primaryColor),),
-                AnimatedTextKit(animatedTexts: [
-                  TyperAnimatedText(
-                    " responsive web and mobile app.",
-                    speed: Duration(milliseconds: 60),
-                  ),
-                  TyperAnimatedText(
-                    " python projects.",
-                    speed: Duration(milliseconds: 60),
-                  ),
-                ]),
-              ],
-            ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "My investment on\n Learnings!",
+                style:Responsive.isDesktop(context)? Theme.of(context).textTheme.headline3!.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white
+                ):
+                Responsive.isMobile(context)?
+                Theme.of(context).textTheme.headline6!.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white)
+                    :Theme.of(context).textTheme.headline5!.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white
+                ),
+              ),
+              if (Responsive.isMobileLarge(context) && !Responsive.isMobile(context))
+                const SizedBox(height: defaultPadding/2,),
+              if (!Responsive.isMobile(context))
+              DefaultTextStyle(
+                style: Theme.of(context).textTheme.subtitle1!,
+                child: Row(
+                  children: [
+                    if (!Responsive.isMobileLarge(context))
+                    Text("I bulit",style: TextStyle(color: primaryColor),),
+                    AnimatedTextKit(animatedTexts: [
+                      TyperAnimatedText(
+                        " responsive web and mobile app.",
+                        speed: Duration(milliseconds: 60),
+                      ),
+                      TyperAnimatedText(
+                        " python projects.",
+                        speed: Duration(milliseconds: 60),
+                      ),
+                    ]),
+                  ],
+                ),
+              ),
+            ],
           ),
-          if (!Responsive.isMobile(context))
-          SizedBox(height: defaultPadding,),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

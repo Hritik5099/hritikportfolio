@@ -6,6 +6,7 @@ import 'package:myportfolio/screens/mySocial.dart';
 import '../myCertificates.dart';
 import '../myProjects.dart';
 import '../myRecommendation.dart';
+import '../mySchooling.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
       myProject(),
       myRecommendation(),
       myCertificates(),
+      mySchooling(),
       mySocial(),
     ]);
   }
