@@ -26,17 +26,17 @@ class ProjectCard extends StatelessWidget {
             style: Theme.of(context).textTheme.subtitle2,
           ),
           const SizedBox(height: defaultPadding,),
-          Text(
+          SelectableText(
             project.description!,
-            maxLines: Responsive.isMobile(context)?1:Responsive.isMobileLarge(context) || Responsive.isTablet(context)?3:4,
+            maxLines: Responsive.isMobile(context)?2:Responsive.isMobileLarge(context) || Responsive.isTablet(context)?4:6,
             style: TextStyle(height: 1.5),
           ),
           if (!Responsive.isMobileLarge(context))
           const SizedBox(height: defaultPadding,),
-          TextButton(onPressed: (){}, child: Text(
-            "Read More>>",
-            style: TextStyle(color: primaryColor),
-          ))
+          // TextButton(onPressed: (){}, child: Text(
+          //   "Read More>>",
+          //   style: TextStyle(color: primaryColor),
+          // ))
         ],
       ),
     );
