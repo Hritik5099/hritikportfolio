@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myportfolio/screens/Home/home_screen.dart';
-import 'package:myportfolio/screens/main/main_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: "Hritik's Portfolio",
       theme: ThemeData.dark().copyWith(
         primaryColor: primaryColor,
         scaffoldBackgroundColor: bgColor,

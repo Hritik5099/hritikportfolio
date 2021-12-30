@@ -12,23 +12,6 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      // appBar: Responsive.isMobileLarge(context)?AppBar(
-      //   title: Text(
-      //     "Portflio",
-      //     style: Theme.of(context).textTheme.headline5!.copyWith(
-      //         fontWeight: FontWeight.bold,
-      //         color: Colors.black
-      //     ),
-      //   ),
-      //   leading: Builder(
-      //     builder: (context)=>IconButton(
-      //       onPressed: (){
-      //         Scaffold.of(context).openDrawer();
-      //       },
-      //       icon: Icon(Icons.menu),
-      //     ),
-      //   )
-      // ):null,
       drawer: SlideMenu(),
       body: Container(
         constraints: BoxConstraints(maxWidth: maxWidth),
