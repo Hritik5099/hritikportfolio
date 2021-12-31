@@ -3,6 +3,8 @@ import 'package:myportfolio/constants.dart';
 import 'package:myportfolio/responsive.dart';
 import 'package:myportfolio/screens/slide_menu.dart';
 
+import '../downpage.dart';
+
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key, required this.children}) : super(key: key);
 
@@ -25,23 +27,7 @@ class MainScreen extends StatelessWidget {
             ),
             Expanded(
               flex: 7, // it will take 7/(2+7)=78% of the screen
-                child: SingleChildScrollView(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      //color: darkColor.withOpacity(0.66),
-                      image: DecorationImage(
-                        colorFilter: ColorFilter.mode(darkColor.withOpacity(0.66), BlendMode.dstATop),
-                        image: AssetImage("assets/images/p.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        ...children, // our footer
-                      ],
-                    ),
-                  ),
-                )
+                child: downPage(children: children)
             ),
           ],
         ),

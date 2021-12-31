@@ -4,6 +4,7 @@ import 'package:myportfolio/models/schooling.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../constants.dart';
+import '../responsive.dart';
 
 class schoolingcard extends StatelessWidget {
   const schoolingcard({
@@ -16,7 +17,7 @@ class schoolingcard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 400,
+      width: Responsive.isMobileLarge(context)?300: 400,
       padding: EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(

@@ -11,7 +11,8 @@ class banner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(aspectRatio: Responsive.isMobileLarge(context)?3:4,
+    return AspectRatio(
+      aspectRatio: Responsive.isMobileLarge(context)?3:4,
       child: Stack(
         fit: StackFit.expand,
         children: [

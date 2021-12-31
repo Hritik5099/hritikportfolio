@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myportfolio/models/Recommendation.dart';
+import 'package:myportfolio/responsive.dart';
 
 import '../constants.dart';
 
@@ -14,7 +15,7 @@ class RecommendationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 400,
+      width: Responsive.isMobileLarge(context)?300: 400,
       padding: EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(

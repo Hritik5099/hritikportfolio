@@ -31,12 +31,6 @@ class ProjectCard extends StatelessWidget {
             maxLines: Responsive.isMobile(context)?2:Responsive.isMobileLarge(context) || Responsive.isTablet(context)?4:6,
             style: TextStyle(height: 1.5),
           ),
-          if (!Responsive.isMobileLarge(context))
-          const SizedBox(height: defaultPadding,),
-          // TextButton(onPressed: (){}, child: Text(
-          //   "Read More>>",
-          //   style: TextStyle(color: primaryColor),
-          // ))
         ],
       ),
     );
