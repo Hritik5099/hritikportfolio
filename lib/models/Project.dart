@@ -13,12 +13,7 @@ List<Project> demo_projects = [
   Project(
     title: "Social Media App - Flutter & Firebase ",
     description:
-        "In the Social Media, we show you how you can create a nice clean onboarding screen for your social app that can run both Andriod and iOS devices because it builds with flutter. We also build a Sign in, Forgot Password screen with a custom error indicator. And in the main part of the app it contains the featres of instagram where we can follow and unfollow and user. Also it has an additional feature of e-commerce where one can easily sell and buy and good on this platform.",
-  ),
-  Project(
-    title: "Outlook Email App Redesign - Flutter Fully Responsive Design UI",
-    description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
+        "In the Social Media, we show you how you can create a nice clean onboarding screen for your social app that can run both Andriod and iOS devices because it builds with flutter. We also build a Sign in, Forgot Password screen with a custom error indicator. And in the main part of the app it contains the features of instagram where we can follow and unfollow and user. Also it has an additional feature of e-commerce where one can easily sell and buy and good on this platform.",
   ),
   Project(
     title: "Chat/Messaging App Light and Dark Theme - Flutter UI",

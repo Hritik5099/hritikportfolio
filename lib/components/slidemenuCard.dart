@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myportfolio/screens/my_info.dart';
 import 'package:myportfolio/screens/skills.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../constants.dart';
 import 'Coding.dart';
@@ -42,7 +43,9 @@ class slidemenuCard extends StatelessWidget {
               Divider(thickness: 2,),
               SizedBox(height: defaultPadding / 2),
               TextButton(
-                onPressed: (){},
+                onPressed: (){
+                  launch("https://drive.google.com/file/d/1ad4m8s-CPlK045Rqbn1ltxajliLhMqa0/view?usp=sharing");
+                },
                 child: Row(
                   children: [
                     Text(
