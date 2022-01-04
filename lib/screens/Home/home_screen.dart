@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myportfolio/components/banner.dart';
 import 'package:myportfolio/screens/main/main_screen.dart';
+import 'package:myportfolio/screens/myBadge.dart';
 import 'package:myportfolio/screens/mySocial.dart';
 
 import '../myCertificates.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatelessWidget {
     return MainScreen(children: [
       banner(),
       myProject(),
+      myBadges(),
       myRecommendation(),
       myCertificates(),
       mySchooling(),

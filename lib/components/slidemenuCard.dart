@@ -24,6 +24,7 @@ class slidemenuCard extends StatelessWidget {
               BasicInfo("Residence:", "Malout,Punjab"),
               BasicInfo("Age:", "21"),
               BasicInfo("Mobile Number:", "9914025983"),
+              BasicInfo("E-mail:", "hritiknanda5099@gmail.com"),
               Divider(thickness: 2,),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,7 +45,7 @@ class slidemenuCard extends StatelessWidget {
               SizedBox(height: defaultPadding / 2),
               TextButton(
                 onPressed: (){
-                  launch("https://drive.google.com/file/d/1xmQhvkYLUMESUFfs12s73zZjLABMTcL-/view?usp=sharing");
+                  launch("https://drive.google.com/file/d/1S2cAwCx5iyzlWvcbUbLFTdHCvdLdL2sp/view?usp=sharing");
                 },
                 child: Row(
                   children: [
