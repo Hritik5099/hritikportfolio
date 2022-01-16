@@ -16,7 +16,7 @@ class myProject extends StatelessWidget {
       children: [
         const SizedBox(height: defaultPadding,),
         Text(
-          "   My Project",
+          "    My Project",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
               fontWeight: FontWeight.bold,
               color: Colors.white

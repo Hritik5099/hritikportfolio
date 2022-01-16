@@ -19,7 +19,7 @@ class myBadges extends StatelessWidget {
       children: [
         const SizedBox(height: defaultPadding,),
         Text(
-          "   Google Developer Badges ",
+          "    My Badges ",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
               fontWeight: FontWeight.bold,
               color: Colors.white

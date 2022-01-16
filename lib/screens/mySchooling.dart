@@ -14,6 +14,7 @@ class mySchooling extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        const SizedBox(height: defaultPadding,),
         Text(
           "   My Schooling",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(

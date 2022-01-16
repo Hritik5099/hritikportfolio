@@ -18,7 +18,7 @@ class myRecommendation extends StatelessWidget {
       children: [
         const SizedBox(height: defaultPadding,),
         Text(
-          "   Recommendations",
+          "    Recommendations",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
               fontWeight: FontWeight.bold,
               color: Colors.white

@@ -19,7 +19,7 @@ class myCertificates extends StatelessWidget {
       children: [
         const SizedBox(height: defaultPadding,),
         Text(
-          "   Certificates",
+          "    Certificates",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
               fontWeight: FontWeight.bold,
               color: Colors.white
