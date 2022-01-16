@@ -1,39 +1,40 @@
 class Badges {
-  final String? name, image,link;
+  final String? image,link;
 
-  Badges({this.name, this.image,this.link});
+  Badges({ this.image,this.link});
 }
+
+final String image_string= "assets/images/";
+final String link_string= "https://developers.google.com/profile/badges/";
 
 final List<Badges> demo_badges = [
   Badges(
-    name: "Ajit Singh",
-    image: "assets/images/developer_profile.png",
-      link:"https://developers.google.com/profile/badges/profile/created-profile",
+    image: image_string+"developer_profile.png",
+      link:link_string+"profile/created-profile",
   ),
   Badges(
-    name: "Maximilian Schwarzmüller",
-    image: "assets/images/web_collab.png",
-    link:"https://developers.google.com/profile/badges/codelabs/first-codelab",
+    image: image_string+"f&f.png",
+    link:link_string+"playlists/firebase/add_firebase_to_flutter",
   ),
   Badges(
-    name: "Maximilian Schwarzmüller",
-    image: "assets/images/flutter_app.png",
-    link:"https://developers.google.com/profile/badges/playlists/intro-to-flutter",
+    image: image_string+"web_collab.png",
+    link:link_string+"codelabs/first-codelab",
   ),
   Badges(
-    name: "Govind Mishra",
-    image: "assets/images/beta.png",
-    link:"https://developers.google.com/profile/badges/events/beta",
+    image: image_string+"flutter_app.png",
+    link:link_string+"playlists/intro-to-flutter",
   ),
   Badges(
-    name: "Geetanjali Goyal",
-    image: "assets/images/android_studio.png",
-    link:"https://developers.google.com/profile/badges/activity/android/install-android-studio",
+    image: image_string+"beta.png",
+    link:link_string+"events/beta",
+  ),
+  Badges(
+    image: image_string+"android_studio.png",
+    link:link_string+"activity/android/install-android-studio",
     ),
   Badges(
-    name: "Maximilian Schwarzmüller",
-    image: "assets/images/quize.png",
-    link:"https://developers.google.com/profile/badges/playlists/first-playlist",
+    image: image_string+"quize.png",
+    link:link_string+"playlists/first-playlist",
      ),
 
 ];

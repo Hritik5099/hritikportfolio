@@ -11,6 +11,16 @@ final List<Certificates> demo_certificates = [
     link:"https://drive.google.com/file/d/139QKonl-a1xpz8UrwY1a6ZO_K1X-_4FF/view?usp=sharing",
   ),
   Certificates(
+    name: "Foundation of user experience design",
+    source: "Coursera",
+    link:"https://drive.google.com/file/d/1gv6Mhe8S_-UKto34a2IizNJE3uYenkks/view?usp=sharing",
+  ),
+  Certificates(
+    name: "Tranning of Programming of Python",
+    source: "Intershala",
+    link:"https://drive.google.com/file/d/1VSa7K8nlASeFlpxrdX2zZAzLekT_1FOm/view?usp=sharing",
+  ),
+  Certificates(
     name: "Built a complete IOS and Android App Using Flutter and Firebase",
     source: "Udemy",
     link:"https://drive.google.com/file/d/13CAi9XuJYmAO7LexTgQk0peJ7R6CnjdA/view?usp=sharing",

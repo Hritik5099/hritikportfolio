@@ -17,7 +17,7 @@ class my_info extends StatelessWidget {
             Spacer(flex: 2,),
             CircleAvatar(
               radius: 50,
-              backgroundColor: Colors.grey,
+              backgroundColor: Colors.black,
               //backgroundImage: AssetImage("assets/images/h.jpeg"),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(50),

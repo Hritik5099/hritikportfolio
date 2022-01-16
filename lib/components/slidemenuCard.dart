@@ -17,6 +17,7 @@ class slidemenuCard extends StatelessWidget {
     return Column(
       children: [
         my_info(),
+        Divider(thickness: 2,),
         Expanded(child: SingleChildScrollView(
           padding: EdgeInsets.all(defaultPadding),
           child: Column(

@@ -32,9 +32,9 @@ class mySocial extends StatelessWidget {
               children:[
                 socialButon(url: "https://www.linkedin.com/in/hritik-ranjan-nanda-584b46195",imageName: "linkedin",),
                 const SizedBox(width: defaultPadding,),
-                socialButon(url: "hritiknanda5099@gmail.com",imageName: "gmail",),
+                socialButon(url: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMnNFqRdBmSVcZnnNbcbFxJwtVkbFqMBVvnVwlQRxBkJdxqQRSMLgQXGjwZlDrKrKgsWT",imageName: "gmail",),
                 const SizedBox(width: defaultPadding,),
-                socialButon(url: "hhttps://twitter.com/HritikRanjanNa1?t=gfg8mcmR40c7HG62fXb7cQ&s=09",imageName: "twitter",),
+                socialButon(url: "https://twitter.com/HritikRanjanNa1?t=gfg8mcmR40c7HG62fXb7cQ&s=09",imageName: "twitter",),
                 const SizedBox(width: defaultPadding,),
                 socialButon(url: "https://www.instagram.com/invites/contact/?i=ri4sv2cdwxxj&utm_content=5lb6t0z",imageName: "instagram",),
                 ]),

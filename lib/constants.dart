@@ -9,3 +9,5 @@ const bgColor = Color(0xFF1E1E28);
 const defaultPadding = 20.0;
 const defaultDuration = Duration(seconds: 1);
 const maxWidth = 1440.0;
+final String intro_heading= "Hi, I'm Hritik Ranjan Nanda";
+final String intro= "This have all my Investment on \nLeraning";
