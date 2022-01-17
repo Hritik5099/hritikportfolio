@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myportfolio/responsive.dart';
 import 'package:myportfolio/screens/my_info.dart';
 import 'package:myportfolio/screens/skills.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -24,8 +25,8 @@ class slidemenuCard extends StatelessWidget {
             children: [
               BasicInfo("Residence:", "Malout,Punjab"),
               BasicInfo("Age:", "21"),
-              BasicInfo("Mobile Number:", "9914025983"),
-              BasicInfo("E-mail:", "hritiknanda5099@gmail.com"),
+              Responsive.isDesktop(context)?BasicInfo("Mobile Number:", "9914025983"):BasicInfoButton("Mobile Number:", "9914025983"),
+              BasicInfoButton("E-mail:", "hritiknanda5099@gmail.com"),
               Divider(thickness: 2,),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,15 +50,16 @@ class slidemenuCard extends StatelessWidget {
                   launch("https://drive.google.com/file/d/1S2cAwCx5iyzlWvcbUbLFTdHCvdLdL2sp/view?usp=sharing");
                 },
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "Download CV",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: primaryColor,
                       ),
                     ),
                     SizedBox(width: defaultPadding/2,),
-                    Icon(Icons.arrow_circle_down_sharp,color: Colors.grey,)
+                    Icon(Icons.arrow_circle_down_sharp,color: primaryColor,)
                   ],
                 ),
               ),

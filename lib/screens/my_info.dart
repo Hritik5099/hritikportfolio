@@ -16,11 +16,10 @@ class my_info extends StatelessWidget {
           children: [
             Spacer(flex: 2,),
             CircleAvatar(
-              radius: 50,
+              radius: 60,
               backgroundColor: Colors.black,
               //backgroundImage: AssetImage("assets/images/h.jpeg"),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(50),
                 child: Image.asset(
                   "assets/images/h1.jpeg",
                   width: 100,
