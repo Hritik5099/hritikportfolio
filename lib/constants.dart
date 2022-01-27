@@ -11,4 +11,5 @@ const defaultDuration = Duration(seconds: 1);
 const maxWidth = 1440.0;
 final String intro_heading= "Hi, I'm Hritik Ranjan Nanda";
 final String intro= "I am passionated to Investment on my\nLearning";
+final String intro1= "I am passionated to Investment on my Learning";
 

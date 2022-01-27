@@ -8,23 +8,30 @@ final List<Recommendation> demo_recommendations = [
   Recommendation(
     name: "Geetanjali Goyal",
     source: "Linkedin",
-    link: "linkedin.com/in/geetanjali-goyal-52063b209",
+    link: "https://www.linkedin.com/in/geetanjali-goyal-52063b209",
     text:
         "I was lucky to working with Geetanjali on two flutter projects and which strikes me the most about her ability to write most efficient and reusable codes. She is most efficient to translate her ideas into beautiful and testable flutter apps and websites. She is a Flutter/Dart gem and has my highest recommendation",
   ),
   Recommendation(
     name: "Govind Mishra",
     source: "Linkedin",
-    link: "inkedin.com/in/igovindmishra",
+    link: "https://www.linkedin.com/in/igovindmishra",
     text:
         "Govind Mishra is one of my seniors. He is great asset for any organization. It's was really a true pleasure working with him. His flutter skill is amazing as well as his professionalism . Govind Mishra's problem solving skill is also one of his great skills.",
   ),
   Recommendation(
     name: "Ajit Singh",
     source: "Linkedin",
-    link: "linkedin.com/in/developerajit",
+    link: "https://www.linkedin.com/in/developerajit",
     text:
     "Ajit Singh is one of my seniors. He is most keen with new features in flutter app and web development. His knowledge for flutter is at its peek . Ajit Singh's problem solving attitude is one of his greatest achievements.",
+  ),
+  Recommendation(
+    name: "Ritik Saini",
+    source: "Linkedin",
+    link: "https://www.linkedin.com/in/sainiritik",
+    text:
+    "Ritik Saini is one of my senior. He is developer at pujapurohit. His algorithmic skills make him different of all.",
   ),
   Recommendation(
     name: "Maximilian Schwarzmüller",

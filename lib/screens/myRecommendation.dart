@@ -16,7 +16,7 @@ class myRecommendation extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       //crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: defaultPadding,),
+        //const SizedBox(height: defaultPadding,),
         Text(
           "    Recommendations",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
@@ -27,7 +27,7 @@ class myRecommendation extends StatelessWidget {
               color: Colors.white
           ),
         ),
-        const SizedBox(height: defaultPadding,),
+        const SizedBox(height: defaultPadding*2,),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(

@@ -37,6 +37,7 @@ class my_info extends StatelessWidget {
               "App, IOS & Web \n Developer",
               textAlign: TextAlign.center,
               style: TextStyle(
+                color: Colors.white70,
                 fontWeight: FontWeight.w200,
                 height: 1.5,
               ),

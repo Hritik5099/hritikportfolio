@@ -30,6 +30,16 @@ class BasicInfoButton extends StatelessWidget {
   const BasicInfoButton(this.title,this.text) ;
   final String? title,text;
 
+  _sendingMails() async{
+    const url="mailto:hritiknanda5099@gmail.com";
+    if(await canLaunch(url)){
+      await launch(url);
+    }
+    else{
+      throw "Could not lauch $url";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -52,11 +62,12 @@ class BasicInfoButton extends StatelessWidget {
           TextButton(
               onPressed: (){
             text=="hritiknanda5099@gmail.com"
-                ? launch("https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMnNFqRdBmSVcZnnNbcbFxJwtVkbFqMBVvnVwlQRxBkJdxqQRSMLgQXGjwZlDrKrKgsWT")
+                //? launch("https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMnNFqRdBmSVcZnnNbcbFxJwtVkbFqMBVvnVwlQRxBkJdxqQRSMLgQXGjwZlDrKrKgsWT")
+                ?_sendingMails()
                 :launch("tel:$text!");
           }, child: Text(
             text!,
-            style: TextStyle(fontSize: 10),
+            style: TextStyle(fontSize: 10,),
           ))
         ],
       ),

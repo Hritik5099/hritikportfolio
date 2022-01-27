@@ -17,7 +17,7 @@ class myBadges extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       //crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: defaultPadding,),
+        const SizedBox(height: defaultPadding*2,),
         Text(
           "    My Badges ",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
@@ -28,17 +28,19 @@ class myBadges extends StatelessWidget {
               color: Colors.white
           ),
         ),
-        const SizedBox(height: defaultPadding,),
+        //const SizedBox(height: defaultPadding,),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
             children:List.generate(demo_badges.length, (index) => Padding(
               padding: const EdgeInsets.all(defaultPadding),
               child: googlebatchCard(badges: demo_badges[index],),
-            )),
+            ),
+
+            ),
           ),
         ),
-        const SizedBox(height: defaultPadding,),
+        //const SizedBox(height: defaultPadding,),
       ],
     );
   }

@@ -9,6 +9,16 @@ class mySocial extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
+  _sendingMails() async{
+    const url="mailto:hritiknanda5099@gmail.com";
+    if(await canLaunch(url)){
+      await launch(url);
+    }
+    else{
+      throw "Could not lauch $url";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,7 +26,7 @@ class mySocial extends StatelessWidget {
       children: [
         //const SizedBox(height: defaultPadding,),
         Text(
-          "   Social Media",
+          "Social Media",
           style: Responsive.isDesktop(context)? Theme.of(context).textTheme.headline5!.copyWith(
               fontWeight: FontWeight.bold,
               color: Colors.white
@@ -32,12 +42,15 @@ class mySocial extends StatelessWidget {
               children:[
                 socialButon(url: "https://www.linkedin.com/in/hritik-ranjan-nanda-584b46195",imageName: "linkedin",),
                 const SizedBox(width: defaultPadding,),
-                socialButon(url: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMnNFqRdBmSVcZnnNbcbFxJwtVkbFqMBVvnVwlQRxBkJdxqQRSMLgQXGjwZlDrKrKgsWT",imageName: "gmail",),
+                socialButon(url: "mailto:hritiknanda5099@gmail.com",imageName: "gmail",),
                 const SizedBox(width: defaultPadding,),
                 socialButon(url: "https://twitter.com/HritikRanjanNa1?t=gfg8mcmR40c7HG62fXb7cQ&s=09",imageName: "twitter",),
                 const SizedBox(width: defaultPadding,),
                 socialButon(url: "https://www.instagram.com/invites/contact/?i=ri4sv2cdwxxj&utm_content=5lb6t0z",imageName: "instagram",),
-                ]),
+                const SizedBox(width: defaultPadding,),
+                socialButon(url: "https://github.com/Hritik5099",imageName: "github",),
+
+              ]),
             ),
         const SizedBox(height: defaultPadding,),
       ],
