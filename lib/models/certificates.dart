@@ -16,6 +16,16 @@ final List<Certificates> demo_certificates = [
     link:"https://drive.google.com/file/d/1gv6Mhe8S_-UKto34a2IizNJE3uYenkks/view?usp=sharing",
   ),
   Certificates(
+    name: "Start the UX Design Process: Empathize, Define,and Ideate",
+    source: "Coursera",
+    link:"https://drive.google.com/file/d/14osAIu6HSZ3woE1mUjwOqL5wOrCFwbx9/view?usp=sharing",
+  ),
+  Certificates(
+    name: "EMERGING TECHNOLOGIES-2022 by IBM",
+    source: "IBM",
+    link:"https://drive.google.com/file/d/14osAIu6HSZ3woE1mUjwOqL5wOrCFwbx9/view?usp=sharing",
+  ),
+  Certificates(
     name: "Tranning of Programming of Python",
     source: "Intershala",
     link:"https://drive.google.com/file/d/1VSa7K8nlASeFlpxrdX2zZAzLekT_1FOm/view?usp=sharing",

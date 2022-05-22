@@ -9,6 +9,18 @@ final String link_string= "https://developers.google.com/profile/badges/";
 
 final List<Badges> demo_badges = [
   Badges(
+    image: image_string+"web_app.jpeg",
+    link:link_string+"playlists/firebase/web-apps-with-firebase",
+  ),
+  Badges(
+    image: image_string+"i:o.jpeg",
+    link:link_string+"events/io/2022/attendee",
+  ),
+  Badges(
+    image: image_string+"cloud_firestore.jpeg",
+    link:link_string+"playlists/cloud/get_to_know_cloud_firestore",
+  ),
+  Badges(
     image: image_string+"developer_profile.png",
       link:link_string+"profile/created-profile",
   ),

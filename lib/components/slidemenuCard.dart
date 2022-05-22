@@ -47,7 +47,7 @@ class slidemenuCard extends StatelessWidget {
               SizedBox(height: defaultPadding / 2),
               TextButton(
                 onPressed: (){
-                  launch("https://drive.google.com/file/d/1S2cAwCx5iyzlWvcbUbLFTdHCvdLdL2sp/view?usp=sharing");
+                  launch("https://drive.google.com/file/d/1mez43l0erX8Ii0CAixoirZg8Fu1hR3Dm/view?usp=sharing");
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
